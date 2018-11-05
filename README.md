@@ -73,5 +73,9 @@ CMD echo 'hello docker' 3df065bgdff6
 镜像仓库
 ## docker-compose
 多容器app
+## docker命令
+``` shell
+service docker start //启动docker demo
+```
 ## 理解资料
 https://segmentfault.com/a/1190000008557309
