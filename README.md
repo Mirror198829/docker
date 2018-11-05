@@ -75,7 +75,7 @@ CMD echo 'hello docker' 3df065bgdff6
 多容器app
 ## docker命令
 ``` shell
-service docker start //启动docker demo
+service docker start //启动docker daemon
 ```
 ## 理解资料
 https://segmentfault.com/a/1190000008557309
