@@ -6,6 +6,8 @@ service docker start //启动docker daemon
 docker image ls //查看本地所有镜像
 docker run -d -p training/webapp python app.py //启动容器
 docker ps //查找正在运行的容器
+docker port bf08b7f2cd89[CONTAINER ID] //查看容器映射端口号
+docker port zealous_agnesi[NAMES] //查看容器映射端口号  0.0.0.0:32771->5000/tcp
 ```
 ## 简介
 `docker`：2013年横空出现。  
