@@ -102,7 +102,8 @@ CMD echo 'hello docker' 3df065bgdff6
 步骤二：docker仓库---->拉取到目的地  
 docker仓库：
 * hub.docker.com
-* c.163.com
+* c.163.com  
+docker支持自己在内网内建立一个私有仓库
 ## Volume
 提供独立于容器之外的持久化存储
 ## Registry
