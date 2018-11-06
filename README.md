@@ -113,6 +113,11 @@ docker仓库：
 * hub.docker.com
 * c.163.com  
 docker支持自己在内网内建立一个私有仓库
+# docker网络
+#### 网络类型
+* Bridge：独立的ip 端口和namespace
+* Host 与主机共用，不会独立分配。启用该模式该容器不会拥有独立的networknamespace，而是和主机使用一个，容器将不会再虚拟出自己的网卡，配置自己的ip和端口
+* None
 ## Volume
 提供独立于容器之外的持久化存储
 ## Registry
