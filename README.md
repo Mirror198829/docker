@@ -4,7 +4,7 @@
 ``` shell
 service docker start //启动docker daemon
 docker image ls //查看本地所有镜像
-docker iamges node[REPOSITORY] //查看指定image
+docker images node[REPOSITORY] //查看指定image
 
 docker run -d -p training/webapp python app.py //启动容器
 docker run ubuntu:15.10 /bin/echo "Hello world"//启动容器
