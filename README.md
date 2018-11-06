@@ -99,7 +99,10 @@ CMD echo 'hello docker' 3df065bgdff6
 # 仓库
 如何把本地镜像传输到目的地，这时候就需要docker仓库。  
 步骤一：本地----->docker仓库。  
-步骤二：docker仓库---->拉取到目的地
+步骤二：docker仓库---->拉取到目的地  
+docker仓库：
+* hub.docker.com
+* c.163.com
 ## Volume
 提供独立于容器之外的持久化存储
 ## Registry
