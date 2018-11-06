@@ -24,6 +24,8 @@ docker stop $NAMES   //停止指定容器
 docker stop $CONTAINER_ID   //停止指定容器
 docker start $NAMES //启动指定容器
 docker start $CONTAINER_ID   //启动指定容器
+
+netstat -na|grep 8080 //查看8080端口占用情况
 ```
 ## 简介
 `docker`：2013年横空出现。  
