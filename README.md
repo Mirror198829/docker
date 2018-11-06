@@ -8,6 +8,7 @@ docker images[OPTIONS][REPOSITORY[:TAG]] //查看本地镜像
 docker image ls   //查看本地所有镜像
 docker images node[REPOSITORY]  //查看指定image
 
+docker run [OPTIONS]IMAGE[:TAG][COMMAND][ARG……] //启动镜像
 docker run -d -P training/webapp python app.py  //启动容器
 docker run -d -P --name [$NAMES] training/webapp python app.py //自定义名称的启动容器
 docker run ubuntu:15.10 /bin/echo "Hello world" //启动容器
