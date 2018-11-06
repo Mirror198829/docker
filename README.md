@@ -1,5 +1,11 @@
 # docker
 参考： http://www.runoob.com/docker/docker-tutorial.html
+## docker命令
+``` shell
+service docker start //启动docker daemon
+docker image ls //查看本地所有镜像
+docker run -d -p training/webapp python app.py //启动容器
+```
 ## 简介
 `docker`：2013年横空出现。  
 以Docker为代表的内核容器技术不是新技术，而是将已有技术（LXC,cgroups,Union FS）进行了更好的包装和整合，并形成了一种标准镜像格式。   
@@ -73,9 +79,5 @@ CMD echo 'hello docker' 3df065bgdff6
 镜像仓库
 ## docker-compose
 多容器app
-## docker命令
-``` shell
-service docker start //启动docker daemon
-```
 ## 理解资料
 https://segmentfault.com/a/1190000008557309
