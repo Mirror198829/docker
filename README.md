@@ -79,7 +79,8 @@ Docker是什么呢，白话点说，就是一个Container的管理工具。
 |ENTRYPOINT|容器入口|
 |USER|指定用户|
 |VOLUME|mount point|
-#### docker镜像
+# 镜像
+镜像的本质就是文件  
 通过docker images指令来查看本地有哪些镜像  
 * 镜像ID： 每个镜像有一个唯一的ID；长度为64个字符。通常只使用前12个字符
 * 镜像Tag：每个镜像上可以打上一个或多个TAG
@@ -93,6 +94,8 @@ MAINTAINER xbf  fb1aabf4427b
 CMD echo 'hello docker' 3df065bgdff6
 ```
 镜像分层的好处是当多个dockerfile中有5个镜像分层相同时变可以减少压力
+# 容器
+容器的本质是进程
 ## Volume
 提供独立于容器之外的持久化存储
 ## Registry
