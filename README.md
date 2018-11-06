@@ -118,6 +118,13 @@ docker支持自己在内网内建立一个私有仓库
 * Bridge：独立的ip 端口和namespace
 * Host 与主机共用，不会独立分配。启用该模式该容器不会拥有独立的networknamespace，而是和主机使用一个，容器将不会再虚拟出自己的网卡，配置自己的ip和端口
 * None
+#### 端口映射
+容器内的端口要在主机内访问到
+
+``` shell
+docker run -d -p 8080:80 nginx //启动nginx 分配8080端口号
+docker run -d -P nginx   //启动nginx 随意分配一个端口号
+```
 ## Volume
 提供独立于容器之外的持久化存储
 ## Registry
