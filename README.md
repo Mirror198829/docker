@@ -12,6 +12,8 @@ docker run ubuntu:15.10 /bin/echo "Hello world"//启动容器
 docker ps //查找正在运行的容器
 docker port bf08b7f2cd89[CONTAINER ID] //查看容器映射端口号
 docker port zealous_agnesi[NAMES] //查看容器映射端口号  0.0.0.0:32771->5000/tcp
+docker stop [NAMES] //停止指定容器
+docker stop [CONTAINER ID]//停止指定容器
 ```
 ## 简介
 `docker`：2013年横空出现。  
