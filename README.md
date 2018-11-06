@@ -3,6 +3,8 @@
 ## docker命令
 ``` shell
 service docker start  //启动docker daemon
+docker pull[OPTIONS] NAME[:TAG] //拉取镜像,:TAG(默认 :Latest)
+docker images[OPTIONS][REPOSITORY[:TAG]] //查看本地镜像
 docker image ls   //查看本地所有镜像
 docker images node[REPOSITORY]  //查看指定image
 
