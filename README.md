@@ -96,6 +96,8 @@ CMD echo 'hello docker' 3df065bgdff6
 镜像分层的好处是当多个dockerfile中有5个镜像分层相同时变可以减少压力
 # 容器
 容器的本质是进程
+# 仓库
+如何把本地镜像进行传输，这时候就需要docker仓库。
 ## Volume
 提供独立于容器之外的持久化存储
 ## Registry
