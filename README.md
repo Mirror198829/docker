@@ -27,7 +27,19 @@ docker start $CONTAINER_ID   //启动指定容器
 
 netstat -na|grep 8080 //查看8080端口占用情况
 ```
-## 简介
+##### docker命令
+|命令|用途|
+|---|---|
+|docker pull|获取image|
+|docker build|创建image|
+|docker images|列出image|
+|docker run|运行container|
+|docker ps|列出container|
+|docker rm|删除container|
+|docker rmi|删除image|
+|docker cp|在host和container之间拷贝文件|
+|docker commit|保存改动为新的image|
+## 概览
 `docker`：2013年横空出现。  
 以Docker为代表的内核容器技术不是新技术，而是将已有技术（LXC,cgroups,Union FS）进行了更好的包装和整合，并形成了一种标准镜像格式。   
 开源项目，它可以将任何应用以轻量级的形式打包、发布、运行  
@@ -42,15 +54,15 @@ Docker是什么呢，白话点说，就是一个Container的管理工具。
 |硬盘使用|MB-GB|GB|
 |性能|接近原生|小于原生|
 |系统支持量|单机支持上千个容器|一般几十个|  
-## 思想
+#### 思想
 * 集装箱
 * 标准化（1.运输方式  2.存储方式  3.api接口）
 * 隔离（LXC思想）
-#### docker思想解决的问题
+##### docker思想解决的问题
 * 本地运行没问题，测试环境或者生产环境有问题。docker的集装箱思想解决了运行环境不一致的问题。
 * 系统卡，磁盘占满。linux系统本身就是多租户的。docker的隔离思想可以解决该问题，保证自己的app不被其他应用影响。
 * 服务器撑不住。扩容可以解决这种问题。
-## 术语
+#### 术语
 |en|中文|作用|
 |---|---|---|
 |host|宿主机|正在使用的电脑|
@@ -59,19 +71,8 @@ Docker是什么呢，白话点说，就是一个Container的管理工具。
 |registry|仓库|存储很多镜像的仓库|
 |daemoon|守护程序|用来接收用户命令，和registry共享|
 |client|客户端|给daemon输送命令|
-## docker命令
-|命令|用途|
-|---|---|
-|docker pull|获取image|
-|docker build|创建image|
-|docker images|列出image|
-|docker run|运行container|
-|docker ps|列出container|
-|docker rm|删除container|
-|docker rmi|删除image|
-|docker cp|在host和container之间拷贝文件|
-|docker commit|保存改动为新的image|
-## dockerfile
+
+# dockerfile
 类似配置文件，通过dockerfile可以构建一个image
 #### dockerfile语法
 |命令|用途|
