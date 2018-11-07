@@ -22,6 +22,7 @@ docker stop $NAMES   //停止指定容器
 docker stop $CONTAINER_ID   //停止指定容器
 docker start $NAMES //启动指定容器
 docker start $CONTAINER_ID   //启动指定容器
+docker restart $CONTAINER_ID   //重启指定容器
 
 netstat -na|grep 8080 //查看8080端口占用情况
 ```
