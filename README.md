@@ -43,6 +43,7 @@ netstat -na|grep 8080 //查看8080端口占用情况
 |docker cp|在host和container之间拷贝文件|
 |docker commit|保存改动为新的image|
 # 概览
+![avatar](https://mirror198829.github.io/static/docker/d.png)
 `docker`：2013年横空出现。  
 以Docker为代表的内核容器技术不是新技术，而是将已有技术（LXC,cgroups,Union FS）进行了更好的包装和整合，并形成了一种标准镜像格式。   
 开源项目，它可以将任何应用以轻量级的形式打包、发布、运行  
@@ -82,6 +83,7 @@ Docker是什么呢，白话点说，就是一个Container的管理工具。
 * 镜像Repository:每个镜像存储在一个仓库中  
 * Respository:TAG 唯一标识了一个镜像
 #### 镜像分层
+![avatar](https://mirror198829.github.io/static/docker/image.png)
 Dockerfile中每一行都产生一个新层。
 ``` javascript
 FROM alpine:latest  4e38e38c8ce0
