@@ -1,6 +1,5 @@
-# docker
 参考： http://www.runoob.com/docker/docker-tutorial.html
-## docker命令
+# docker命令
 ``` shell
 service docker start  //启动docker daemon
 docker pull[OPTIONS] NAME[:TAG] //拉取镜像,:TAG(默认 :Latest)
@@ -27,7 +26,7 @@ docker start $CONTAINER_ID   //启动指定容器
 
 netstat -na|grep 8080 //查看8080端口占用情况
 ```
-##### docker命令
+##### 简要命令
 |命令|用途|
 |---|---|
 |docker pull|获取image|
@@ -39,7 +38,7 @@ netstat -na|grep 8080 //查看8080端口占用情况
 |docker rmi|删除image|
 |docker cp|在host和container之间拷贝文件|
 |docker commit|保存改动为新的image|
-## 概览
+# 概览
 `docker`：2013年横空出现。  
 以Docker为代表的内核容器技术不是新技术，而是将已有技术（LXC,cgroups,Union FS）进行了更好的包装和整合，并形成了一种标准镜像格式。   
 开源项目，它可以将任何应用以轻量级的形式打包、发布、运行  
@@ -54,7 +53,7 @@ Docker是什么呢，白话点说，就是一个Container的管理工具。
 |硬盘使用|MB-GB|GB|
 |性能|接近原生|小于原生|
 |系统支持量|单机支持上千个容器|一般几十个|  
-#### 思想
+### 思想
 * 集装箱
 * 标准化（1.运输方式  2.存储方式  3.api接口）
 * 隔离（LXC思想）
@@ -71,24 +70,6 @@ Docker是什么呢，白话点说，就是一个Container的管理工具。
 |registry|仓库|存储很多镜像的仓库|
 |daemoon|守护程序|用来接收用户命令，和registry共享|
 |client|客户端|给daemon输送命令|
-
-# dockerfile
-类似配置文件，通过dockerfile可以构建一个image
-#### dockerfile语法
-|命令|用途|
-|---|---|
-|FROM|base image|
-|RUN|执行命令|
-|ADD|添加文件|
-|COPY|拷贝文件|
-|CMD|执行命令|
-|EXPOSE|暴露端口|
-|WORKDIR|指定路径|
-|MAINTAINER|维护者|
-|ENV|设定环境变量|
-|ENTRYPOINT|容器入口|
-|USER|指定用户|
-|VOLUME|mount point|
 # 镜像
 镜像的本质就是文件  
 通过docker images指令来查看本地有哪些镜像  
@@ -126,6 +107,23 @@ docker支持自己在内网内建立一个私有仓库
 docker run -d -p 8080:80 nginx //启动nginx 分配8080端口号
 docker run -d -P nginx   //启动nginx 随意分配一个端口号
 ```
+# dockerfile
+类似配置文件，通过dockerfile可以构建一个image
+#### dockerfile语法
+|命令|用途|
+|---|---|
+|FROM|base image|
+|RUN|执行命令|
+|ADD|添加文件|
+|COPY|拷贝文件|
+|CMD|执行命令|
+|EXPOSE|暴露端口|
+|WORKDIR|指定路径|
+|MAINTAINER|维护者|
+|ENV|设定环境变量|
+|ENTRYPOINT|容器入口|
+|USER|指定用户|
+|VOLUME|mount point|
 ## Volume
 提供独立于容器之外的持久化存储
 ## Registry
