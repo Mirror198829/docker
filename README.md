@@ -24,6 +24,9 @@ docker start $NAMES //启动指定容器
 docker start $CONTAINER_ID   //启动指定容器
 docker restart $CONTAINER_ID   //重启指定容器
 
+docker rm `docker ps -a -q` //删除docker ps -a 查看出来的容器
+docker rm $CONTAINER_ID //删除指定容器
+
 netstat -na|grep 8080 //查看8080端口占用情况
 ```
 ##### 简要命令
