@@ -1,4 +1,3 @@
-参考： http://www.runoob.com/docker/docker-tutorial.html
 # docker命令
 ``` shell
 service docker start  //启动docker daemon
@@ -130,5 +129,6 @@ docker run -d -P nginx   //启动nginx 随意分配一个端口号
 镜像仓库
 ## docker-compose
 多容器app
-## 理解资料
-https://segmentfault.com/a/1190000008557309
+## 参考资料
+https://segmentfault.com/a/1190000008557309  
+http://www.runoob.com/docker/docker-tutorial.html
