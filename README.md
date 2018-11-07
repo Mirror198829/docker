@@ -84,6 +84,10 @@ MAINTAINER xbf  fb1aabf4427b
 CMD echo 'hello docker' 3df065bgdff6
 ```
 镜像分层的好处是当多个dockerfile中有5个镜像分层相同时变可以减少压力
+
+### 如何制作自己的镜像 
+* DockerFile
+* docker build
 # 容器
 容器的本质是进程
 # 仓库
@@ -107,6 +111,7 @@ docker run -d -p 8080:80 nginx //启动nginx 分配8080端口号
 docker run -d -P nginx   //启动nginx 随意分配一个端口号
 ```
 # dockerfile
+用来制作自己的镜像  
 类似配置文件，通过dockerfile可以构建一个image
 #### dockerfile语法
 |命令|用途|
