@@ -5,6 +5,7 @@ docker pull[OPTIONS] NAME[:TAG] //拉取镜像,:TAG(默认 :Latest)
 docker images[OPTIONS][REPOSITORY[:TAG]] //查看本地镜像
 docker image ls   //查看本地所有镜像
 docker images node[REPOSITORY]  //查看指定image
+docker tag [IMAGE ID] [NEW NAME]:latest //重命名镜像名
 
 docker run [OPTIONS]IMAGE[:TAG][COMMAND][ARG……] //启动镜像
 docker run -d -P training/webapp python app.py  //启动容器,-d运行这个容器在后台
