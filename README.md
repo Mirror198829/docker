@@ -109,6 +109,10 @@ docker仓库：
 * c.163.com  
 docker支持自己在内网内建立一个私有仓库
 # docker网络
+`docker 0`：Linux虚拟网桥。  
+ 虚拟网桥的特点：
+ * 可以设置ip地址
+ * 相当于一个隐藏的虚拟网卡
 #### 网络类型
 * Bridge：独立的ip 端口和namespace
 * Host 与主机共用，不会独立分配。启用该模式该容器不会拥有独立的networknamespace，而是和主机使用一个，容器将不会再虚拟出自己的网卡，配置自己的ip和端口
