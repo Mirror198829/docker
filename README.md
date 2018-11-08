@@ -11,6 +11,9 @@ docker run -d -P training/webapp python app.py  //启动容器,-d运行这个容
 docker run -d -P --name [$NAMES] training/webapp python app.py //自定义名称的启动容器
 docker run ubuntu:15.10 /bin/echo "Hello world" //启动容器
 
+docker inspect [NAMES] //检查容器，输出容器相关所有信息
+docker inspect cube
+
 docker exec [OPTIONS] CONTANIER COMMAND [ARG……] //进入容器
 docker exec -it f4 bash
 exit //退出容器
