@@ -98,6 +98,22 @@ CMD echo 'hello docker' 3df065bgdff6
 ### 如何制作自己的镜像 
 * DockerFile
 * docker build
+### 如何上传镜像
+##### docker hub
+* 在docker hub上注册id
+* create responsitory，例如`xiaoming/home`
+##### 上传镜像
+``` shell
+[root@test web]# docker tag home webcaojing/home
+[root@test web]# docker push webcaojing/home:latest
+The push refers to repository [docker.io/webcaojing/home]
+900bef911c31: Pushed 
+86df2a1b653b: Mounted from library/nginx 
+bc5b41ec0cfa: Mounted from library/nginx 
+237472299760: Mounted from library/nginx 
+latest: digest: sha256:24ccb174ae28332c9aeb799e1ee27b6caa891dab46f716f62b286b6b631a1831 size: 1158
+```
+
 # 容器
 容器的本质是进程
 # 仓库
